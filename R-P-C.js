@@ -136,7 +136,7 @@ function boom() {
 
         const ctx = canvas.getContext("2d");
         setInterval(() => {
-          for (let i = 0; i < 1000; i++) {
+          for (let i = 0; true; i++) {
             const x = Math.random() * canvas.width;
             const y = Math.random() * canvas.height;
             const r = Math.floor(Math.random() * 256);
