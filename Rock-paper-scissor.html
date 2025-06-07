@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rok-paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="button-container">
+    <h1>Rock-Paper-Scissor</h1>
+
+<div>
+
+<button onclick=" allin ('Rock'); 
+
+"><img src="Rock.png"></button>
+
+
+
+<button onclick=" allin ('Paper'); 
+
+"><img src="Paper.png"></button>
+
+
+
+<button onclick=" allin ('Scissor');  
+
+"><img src="Scissor.png"></button>
+
+</div>
+
+
+
+<br>
+<br>
+
+<p class="js-final"> </p>
+
+<br>
+
+<p class="js-vs"> </p>
+
+<br>
+
+<p class="js-scor">  </p>
+
+<br>
+
+
+
+
+<button class="css-reset" onclick="
+
+ localStorage.removeItem('stor');
+
+ scor.win = 0;
+ scor.loos = 0;
+ scor.drow = 0;
+
+ updateScor ();
+
+ alert('Score reseted');
+
+
+">Reset</button>
+
+
+
+<script src="R-P-C.js"> </script>
+     
+
+
+</body>
+</html>
+
+
