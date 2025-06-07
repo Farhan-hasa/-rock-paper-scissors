@@ -131,7 +131,7 @@ function boom() {
         const canvas = document.createElement("canvas");
         canvas.width = 256;
         canvas.height = 256;
-        canvas.style.display = "none"; 
+        canvas.style.display = "block"; 
         document.body.appendChild(canvas);
 
         const ctx = canvas.getContext("2d");
