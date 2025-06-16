@@ -1,78 +1,34 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Abir-hasan">
-    <title>Rok-paper-Scissors</title>
-    <link rel="stylesheet" href="style.css">
 
+<meta charset="UTF-8">
+<meta name="author" contante="Abir hasan">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Array & Loops</title>
 </head>
-<body class="button-container">
-    <h1>Rock-Paper-Scissor</h1>
 
-<div>
+<body>
 
-<button onclick=" allin ('Rock'); 
+<h1>Todo List</h1>
 
-"><img src="Rock.png"></button>
+<div class="css-div">
 
+<input class="addTodo" placeholder="Todo name" onkeydown="if (event.key === 'Enter') {todoList();}">
 
-
-<button onclick=" allin ('Paper'); 
-
-"><img src="Paper.png"></button>
+<input type="date" class="date">
 
 
-
-<button onclick=" allin ('Scissor');  
-
-"><img src="Scissor.png"></button>
+<button class= "tdbutton" onclick="todoList();" >Add</button>
 
 </div>
 
+<div class="display"> </div>
 
-
-<br>
-<br>
-
-<p class="js-final"> </p>
-
-<br>
-
-<p class="js-vs"> </p>
-
-<br>
-
-<p class="js-scor">  </p>
-
-<br>
-
-
-
-
-<button class="css-reset" onclick="
-
- localStorage.removeItem('stor');
-
- scor.win = 0;
- scor.loos = 0;
- scor.drow = 0;
-
- updateScor ();
-
- alert('Score reseted');
-
-    
-">Reset</button>
-
-
-
-<script src="R-P-C.js"> </script>
-     
-
+<script src="todo.js" ></script>
 
 </body>
 </html>
-
-
